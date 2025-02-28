@@ -12,7 +12,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["CreativoApiV2/CreativoApiV2.csproj", "CreativoApiV2/"]
+WORKDIR /src
+COPY . /src/CreativoApiV2
+RUN dotnet restore "./CreativoApiV2/CreativoApiV2.csproj"
+# COPY ["CreativoApiV2.csproj", "CreativoApiV2/"]
 RUN dotnet restore "./CreativoApiV2/CreativoApiV2.csproj"
 COPY . .
 WORKDIR "/src/CreativoApiV2"
