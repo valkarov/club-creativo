@@ -11,7 +11,8 @@ namespace CreativoApiV2.Model
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=PABLOPC\\SQLEXPRESS;Initial Catalog=CreativoDBV2;Integrated Security=True;Encrypt=False");
+            optionsBuilder.UseSqlServer("Server=database-1-club-creativo.c1k486i6cedk.us-east-2.rds.amazonaws.com;Database=CreativoDBV2;User ID=admin;Password=48htsnmqsu6WaCewiCWv;Encrypt=True;TrustServerCertificate=False;");
+
         }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Province> Provinces { get; set; }
