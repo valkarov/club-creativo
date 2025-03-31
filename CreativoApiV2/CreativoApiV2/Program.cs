@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<CreativoDB>();
+builder.Services.AddDbContext<CreativoDB>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnetion")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
