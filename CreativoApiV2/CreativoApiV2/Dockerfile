@@ -31,3 +31,6 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "CreativoApiV2.dll"]
+
+#copying
+COPY appsettings.json /app/appsettings.json
