@@ -29,7 +29,7 @@ RUN dotnet publish "./CreativoApiV2.csproj" -c $BUILD_CONFIGURATION -o /app/publ
 # Esta fase se usa en producción o cuando se ejecuta desde VS en modo normal (valor predeterminado cuando no se usa la configuración de depuración)
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY ["CreativoApiV2/appsettings.json", "/app"]
 ENTRYPOINT ["dotnet", "CreativoApiV2.dll"]
 
 #copying
