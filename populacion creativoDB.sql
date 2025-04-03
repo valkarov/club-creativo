@@ -19,7 +19,7 @@ INSERT INTO Delivery_Person (IdDeliveryPerson, Username, Password, Firstname, La
 
 
 -- Insert records into the table Question (Frequently Asked Questions of the Creative Club)
-INSERT INTO Questions(QuestionText, Answer)
+INSERT INTO Question(Question, Answer)
 VALUES
     ('¿Cómo puedo participar en las ferias del Club Creativo?', 'Para participar, regístrate como emprendedor en nuestro sitio web y envía tu propuesta creativa.'),
     ('¿Cuándo son las próximas ferias de arte?', 'Consulta nuestro calendario en línea para conocer las fechas de nuestras próximas ferias.'),
