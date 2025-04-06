@@ -6,7 +6,7 @@ INSERT INTO Admins (IdAdmin, Username, Password, FirstName, LastName)
 VALUES
     (2378954,'admin1', '1234', 'Alejandro', 'Gomez'),
     (2374573,'admin2', '1234', 'Maria', 'Martinez'),
-    (2390847,'admin3', '1234', 'Carlos', 'S�nchez'),
+    (2390847,'admin3', '1234', 'Carlos', 'Sanchez'),
     (1234234,'admin4', '1234', 'Laura', 'Perez'),
     (5647343,'admin5', '1234', 'Javier', 'Lopez');
 
@@ -45,7 +45,7 @@ VALUES
     ('Twitter'),
     ('WebPage');
 
--- Insertar informaci�n de redes sociales para cada emprendimiento
+-- Insertar informacion de redes sociales para cada emprendimiento
 INSERT INTO Social (Username, Type, Link)
 VALUES
     ('e7', 'Facebook', 'https://www.facebook.com/galeriacreativa'),
@@ -77,7 +77,7 @@ INSERT INTO Entrepreneurship_Type (type) VALUES
 -- Insertar usuario 1
 INSERT INTO Client (IdClient, Username, Password, Email, FirstName, LastName, Phone, Province, Canton, District)
 VALUES 
-	(1234, 'u1', '1234', 'example1@gmail.com',  'Nombre1', 'Apellido1', '123456789', 'San Jos�', 'San Jos�', 'San Jos�'),
+	(1234, 'u1', '1234', 'example1@gmail.com',  'Nombre1', 'Apellido1', '123456789', 'San Jose', 'San Jose', 'San Jose'),
 	(4321, 'u2', '1234', 'example2@gmail.com', 'Nombre2', 'Apellido2', '987654321', 'Heredia', 'Heredia', 'Heredia');
 
 -- Insertar una fila en Entrepreneurship_Admins
